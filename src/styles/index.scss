@@ -1,13 +1,90 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-/* 
+body{
+    padding: 7rem;
+    font-family: 'Bitter', serif;
+    text-transform: capitalize;
+    background-color: rgb(40, 116, 21);
+    animation-name: example;
+    animation-duration: 30s;
+}
+@keyframes example {
+  0%   {background-color: rgb(121, 126, 192);}
+  20%  {background-color: rgb(4, 160, 25);}
+  30%  {background-color: rgb(207, 216, 81);}
+  40% {background-color: rgb(200, 117, 211);}
+  50% {background-color: rgb(218, 110, 110);}
+  60% {background-color: rgb(129, 231, 103);}
+  70% {background-color: rgb(227, 238, 133);}
+  80% {background-color: rgb(236, 117, 117);}
+  90% {background-color: rgb(230, 126, 221);}
+  1000% {background-color: rgb(163, 243, 152);}
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+button{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    overflow: hidden;
+    outline:none;
+}
+audio{
+    font-size: xx-large;
+}
 
-*/
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 1rem;
+ 
+    
+    
+}
+.songsList{
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+}
+ol{
+    color: aliceblue;
+    border-collapse: collapse; 
+    
+}
+li{
+    margin-top: 2rem;
+    border-bottom:1px solid rgb(44, 78, 64);
+    padding: 0 50px; 
+
+    
+}
+li:active {
+    background-color: #2C444E;
+}
+li:hover {
+    color: #D17A22;
+}
+li::marker {
+    border-bottom:1px solid #2C444E;
+    padding: 0 50px; 
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(12, 77, 31);
+    font-size: 3rem;
+}
+.ball {
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0.7;
+}
