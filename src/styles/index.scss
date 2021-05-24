@@ -18,7 +18,7 @@ body{
   70% {background-color: rgb(227, 238, 133);}
   80% {background-color: rgb(236, 117, 117);}
   90% {background-color: rgb(230, 126, 221);}
-  1000% {background-color: rgb(163, 243, 152);}
+  100% {background-color: rgb(163, 243, 152);}
 }
 
 button{
@@ -53,14 +53,12 @@ audio{
 ol{
     color: aliceblue;
     border-collapse: collapse; 
-    
+
 }
 li{
     margin-top: 2rem;
     border-bottom:1px solid rgb(44, 78, 64);
     padding: 0 50px; 
-
-    
 }
 li:active {
     background-color: #2C444E;
@@ -84,7 +82,9 @@ footer{
     font-size: 3rem;
 }
 .ball {
-  position: absolute;
-  border-radius: 100%;
-  opacity: 0.7;
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0.7;
 }
+
+

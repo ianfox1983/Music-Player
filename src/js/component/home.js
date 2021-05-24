@@ -141,9 +141,7 @@ export function Home() {
 					<i className="fas fa-backward"></i>
 				</button>
 				<button id="pause" onClick={pauseAudio}></button>
-
 				<audio id="audio" controls src={nowPlay} autoPlay></audio>
-
 				<button id="play" onClick={() => playAudio(tempIndex)}></button>
 
 				<button id="next" onClick={() => nextSong(tempIndex)}>
